@@ -846,7 +846,7 @@ export default class GithubHelper {
       dateformatOptions
     );
 
-    const attribution = `In GitLab by @${item.author.username} on ${formattedDate}`;
+    const attribution = `In GitLab by [@${item.author.username}](https://gitlab.com/${item.author.username}) on ${formattedDate}`;
     const lineRef =
       item && item.position
         ? GithubHelper.createLineRef(item.position, repoLink)
